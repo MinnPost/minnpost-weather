@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Weather | MinnPost</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<script type='text/javascript' src='//s7.addthis.com/js/250/addthis_widget.js#async=1'></script>
+<link rel="shortcut icon" href="http://www.minnpost.com/sites/default/themes/siteskin/favicon.ico" type="image/x-icon" />
+<meta name="description" content="Invasive species are all over our beautiful state, though most of the time we don&#039;t really notice.  The Minnesota Department of Natural Resources (DNR) says invasive species are &quot;species that are not native to Minnesota and cause economic or environmental harm or harm to human health&quot;." />
+<meta property="og:title" content="Invasive species of Minnesota"/>
+<meta property="og:site_name" content="MinnPost"/>
+<link rel="apple-touch-icon" href="/sites/default/themes/siteskin/inc/images/apple-touch-icon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+  <link type="text/css" rel="stylesheet" media="all" href="http://www.minnpost.com/sites/default/files/css/css_9bfc99c74276aebc716f388c80378787.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="http://www.minnpost.com/sites/default/files/css/css_cc868ff442f1d24fea299366f6788c15.css" />
+<link type="text/css" rel="stylesheet" media="print" href="http://www.minnpost.com/sites/default/files/css/css_34a6d43c87e9386469ec8caf46422ece.css" />
+  <!--[if IE]>
+      <link rel="stylesheet" href="http://www.minnpost.com/sites/default/themes/derma/inc/css/ie.css?t" type="text/css">
+  <![endif]-->
+    <script type="text/javascript" src="http://www.minnpost.com/sites/default/files/js/js_b07159aa4d58908fdc33ece074fd9ff9.js"></script>
+<script type="text/javascript" src="http://www.minnpost.com/sites/all/libraries/tinymce/jscripts/tiny_mce/tiny_mce.js?t"></script>
+</head>
+<body class="not-front logged-in page-node node-type-article one-sidebar sidebar-right admin-nw admin-vertical admin-df  section-data section-data-id-2012 section-data-id-2012-id-05 section-data-id-2012-id-05-how-we-built-legislative-bill-explorer one-sidebar sidebar-right">
+<div class="outside-embeddable-container">
+
+  <!-- START: Embeddable -->
+  <div class="node-body fieldlayout node-field-body">
+
+
+
+    <style type="text/css">
+      @import url('http://js.aerisapi.com/css/widget.css');
+      
+      #widget-current {
+        width:300px;
+        height:200px;
+      }
+    </style>
+    
+    <script type="text/javascript">
+      window.Aeris = window.Aeris || {
+        onLoad: function() {
+          // Check for hostname to determine which key to use.  Keys are
+          // in the repository as they are out in the open anyway, and 
+          // HAM Weather checks domains and will stop widget if it
+          // comes from a domain that is not registered.
+          var init = {
+            client_id: '5R05o9cJLqREMgIU9uVoO',
+            client_secret: 'l0lN3eBsJAuHbYj3Gzaqdwqs0HXIHriyanLDuVKp',
+            widgets: true
+          };
+          if (document.location.hostname === 'localhost' || 
+            document.location.hostname === 'stage.minnpost.com.228elmp01.blackmesh.com') {
+            init = {
+              client_id: '5R05o9cJLqREMgIU9uVoO',
+              client_secret: 'IWdo9yudrvvKgGwzLsioVpdytiU6lLxfY2mjwd3R',
+              widgets: true
+            };
+          }
+          
+          // Initialize the SDK
+          Aeris.init(init);
+        },
+        onReady: function() {
+          // Show widgets
+          var currentsTop = new Aeris.widgets.Currents($('#widget-current'));
+        }
+      };
+      
+      // Load the SDK asynchronously
+      (function(w, d) {
+        var loader = function() {
+          Aeris.secure = (d.location.protocol === 'https:');
+          var b = '//' + ((Aeris.secure === true) ? 'js-secure' : 'js') + '.aerisapi.com/';
+          var v = Aeris.version;
+          var script = d.createElement('script'), tag = d.getElementsByTagName('script')[0];
+          script.type = 'text/javascript';
+          script.async = true;
+          script.src = b + ((v && v !== '') ? v + '/' : '') + 'aeris.js';
+          tag.parentNode.insertBefore(script, tag);
+        }
+        w.addEventListener ? w.addEventListener('load', loader, false) : w.attachEvent('onload', loader);
+      })(window, document);
+    </script>
+    
+    <h3>Current conditions</h3>
+    <div id="widget-current"></div>
+
+  </div>
+  <!-- END: Embeddable -->
+
+</div>
+</body>
+</html>
