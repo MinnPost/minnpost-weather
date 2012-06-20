@@ -33,9 +33,18 @@
     <style type="text/css">
       @import url('http://js.aerisapi.com/css/widget.css');
       
+      .weather-widget {
+        margin-bottom: 1em;
+      }
       #widget-current {
-        width:300px;
-        height:200px;
+        width: 400px;
+        height: 200px;
+      }
+      #widget-sevenday {
+        width: 400px;
+      }
+      #widget-storms {
+        width: 400px;
       }
     </style>
     
@@ -66,6 +75,14 @@
         onReady: function() {
           // Show widgets
           var currentsTop = new Aeris.widgets.Currents($('#widget-current'));
+          var sevenDay = new Aeris.widgets.Forecast($('#widget-sevenday'));
+          var sevenDay = new Aeris.widgets.StormReports($('#widget-storms'), { 
+            params: {  
+              from: '-1 days', 
+              to: 'now', 
+              sort: 'detail:-1' 
+            }
+          });
         }
       };
       
@@ -86,7 +103,13 @@
     </script>
     
     <h3>Current conditions</h3>
-    <div id="widget-current"></div>
+    <div class="weather-widget" id="widget-current"></div>
+    
+    <h3>Seven day forecast</h3>
+    <div class="weather-widget" id="widget-sevenday"></div>
+    
+    <h3>Storm warnings</h3>
+    <div class="weather-widget" id="widget-storms"></div>
 
   </div>
   <!-- END: Embeddable -->
