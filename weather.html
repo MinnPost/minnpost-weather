@@ -32,7 +32,7 @@
       @import url('http://js.aerisapi.com/css/widget.css');
       
       .weather-widget {
-        margin-bottom: 1em;
+        margin-bottom: 1.5em;
       }
       #widget-current {
         width: 400px;
@@ -74,13 +74,6 @@
           // Show widgets
           var currentsTop = new Aeris.widgets.Currents($('#widget-current'));
           var sevenDay = new Aeris.widgets.Forecast($('#widget-sevenday'));
-          var sevenDay = new Aeris.widgets.StormReports($('#widget-storms'), { 
-            params: {  
-              from: '-1 days', 
-              to: 'now', 
-              sort: 'detail:-1' 
-            }
-          });
         }
       };
       
@@ -100,23 +93,22 @@
       })(window, document);
     </script>
     
-    <h3>Current conditions</h3>
+    <h4>Current conditions</h4>
     <div class="weather-widget" id="widget-current"></div>
     
-    <h3>Seven day forecast</h3>
+    <h4>Seven day forecast</h4>
     <div class="weather-widget" id="widget-sevenday"></div>
     
-    <h3>Storm warnings</h3>
-    <div class="weather-widget" id="widget-storms"></div>
-    
+    <!--
     <h3>Radar, last 6 hours</h3>
     <script type="text/javascript" src="http://js.hamweather.net/rads/wxwnMinnPost3djkj79/640x480/ptype/topo/usmn/6.js?ext=jpg&o=&u=c,cities,i"></script>
     <div class="weather-widget"></div>
+    -->
     
-    <h3>Current temperatures</h3>
+    <h4>Current temperatures</h4>
     <img class="weather-widget" src="http://contours.hamweather.net/wxwnMinnPost3djkj79/contours/png/640x480/currents/usmn_temperature_i1_points.png" width="640" height="480" />
     
-    <h3>Current warnings and advisories</h3>
+    <h4>Current warnings and advisories</h4>
     <img src="http://warnings.hamweather.net/wxwnMinnPost3djkj79/640x480/all/flat/usmn.png" width="640" height="480" />
     <br/>
     <img class="weather-widget" src="http://warnings.hamweather.net/wxwnMinnPost3djkj79/640x480/all/flat/usmn_key.png" width="640"  />
