@@ -13,14 +13,13 @@
 <meta property="og:site_name" content="MinnPost"/>
 <link rel="apple-touch-icon" href="/sites/default/themes/siteskin/inc/images/apple-touch-icon.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-  <link type="text/css" rel="stylesheet" media="all" href="http://www.minnpost.com/sites/default/files/css/css_9bfc99c74276aebc716f388c80378787.css" />
-<link type="text/css" rel="stylesheet" media="screen" href="http://www.minnpost.com/sites/default/files/css/css_cc868ff442f1d24fea299366f6788c15.css" />
-<link type="text/css" rel="stylesheet" media="print" href="http://www.minnpost.com/sites/default/files/css/css_34a6d43c87e9386469ec8caf46422ece.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="http://www.minnpost.com/sites/default/files/css/css_1523040fdb609cf70659e648001e1de3.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="http://www.minnpost.com/sites/default/files/css/css_b26ad2d81bc74f1246e9c9a4c45ecdea.css" />
+<link type="text/css" rel="stylesheet" media="print" href="http://www.minnpost.com/sites/default/files/css/css_cd72d16d00ebb27825710d934e28fbe8.css" />
   <!--[if IE]>
-      <link rel="stylesheet" href="http://www.minnpost.com/sites/default/themes/derma/inc/css/ie.css?t" type="text/css">
+      <link rel="stylesheet" href="http://www.minnpost.com/sites/default/themes/derma/inc/css/ie.css?n" type="text/css">
   <![endif]-->
-    <script type="text/javascript" src="http://www.minnpost.com/sites/default/files/js/js_b07159aa4d58908fdc33ece074fd9ff9.js"></script>
-<script type="text/javascript" src="http://www.minnpost.com/sites/all/libraries/tinymce/jscripts/tiny_mce/tiny_mce.js?t"></script>
+    <script type="text/javascript" src="http://www.minnpost.com/sites/default/files/js/js_2f4c72bb059dd4ecabd7eb43a095d856.js"></script>
 </head>
 <body class="not-front logged-in page-node node-type-article one-sidebar sidebar-right admin-nw admin-vertical admin-df  section-data section-data-id-2012 section-data-id-2012-id-05 section-data-id-2012-id-05-how-we-built-legislative-bill-explorer one-sidebar sidebar-right">
 <div class="outside-embeddable-container node-body fieldlayout node-field-body">
@@ -71,11 +70,17 @@
             client_secret: 'l0lN3eBsJAuHbYj3Gzaqdwqs0HXIHriyanLDuVKp',
             widgets: true
           };
-          if (document.location.hostname === 'localhost' || 
-            document.location.hostname === 'stage.minnpost.com.228elmp01.blackmesh.com') {
+          if (document.location.hostname === 'stage.minnpost.com.228elmp01.blackmesh.com') {
             init = {
               client_id: '5R05o9cJLqREMgIU9uVoO',
               client_secret: 'IWdo9yudrvvKgGwzLsioVpdytiU6lLxfY2mjwd3R',
+              widgets: true
+            };
+          }
+          else if (document.location.hostname === 'localhost') {
+            init = {
+              client_id: '5R05o9cJLqREMgIU9uVoO',
+              client_secret: 'mBulBLEwVXDpWRJvbKXOePmhShm9wDQ4hkB9fP4J',
               widgets: true
             };
           }
